@@ -117,5 +117,29 @@
         <a href="privacy.html">Privacy Policy</a>
     </p>
 </footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var tabs = document.querySelectorAll('.feature-tab');
+    var panels = document.querySelectorAll('.feature-panel');
+
+    tabs.forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        var target = tab.getAttribute('data-feature');
+
+        tabs.forEach(function (t) {
+          t.classList.remove('active');
+        });
+        tab.classList.add('active');
+
+        panels.forEach(function (panel) {
+          var isTarget = panel.id === 'feature-' + target;
+          panel.classList.toggle('active', isTarget);
+        });
+      });
+    });
+  });
+</script>
+
 </body>
 </html>
