@@ -37,3 +37,57 @@ a {
 a:hover {
     text-decoration: underline;
 }
+/* Feature tabs (MyWaterWheel) */
+.feature-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.feature-tab {
+    border: 1px solid #0074D9;
+    background: #ffffff;
+    color: #0074D9;
+    border-radius: 999px;
+    padding: 0.4em 0.9em;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.feature-tab.active {
+    background: #0074D9;
+    color: #ffffff;
+}
+
+.feature-panels {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 1em 1.25em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.feature-panel {
+    display: none;
+}
+
+.feature-panel.active {
+    display: block;
+}
+
+/* Testimonial card */
+.testimonial-card {
+    background: #ffffff;
+    border-left: 4px solid #0074D9;
+    border-radius: 8px;
+    padding: 1em 1.25em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    font-style: italic;
+}
+
+.testimonial-author {
+    margin-top: 0.75em;
+    font-weight: 600;
+    font-style: normal;
+}
